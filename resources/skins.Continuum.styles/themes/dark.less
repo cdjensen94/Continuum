@@ -1,3 +1,18 @@
+    /**
+     * Loads the appropriate LESS module based on user preference.
+     *
+     * @param \SkinTemplate $skin
+     * @param \OutputPage &$template
+     * @return bool
+     */
+     public static function onSkinTemplateOutputPageBeforeExec( $skin, &$template ) {
+        $user = $skin->getUser();
+        $subtheme = $user->getOption('subtheme', 'medium'); // Default to medium
+        $moduleName = "skins.myVectorSkin.subtheme.$subtheme";
+        $template->getOutput()->addModuleStyles( $moduleName );
+        return true;
+    }
+
 /* dark.less */
 html[data-theme='dark'] {
     --background-color: #001F3F;

@@ -25,6 +25,7 @@ use RuntimeException;
 use SkinMustache;
 use SkinTemplate;
 
+
 /**
  * @ingroup Skins
  * @package Continuum
@@ -56,21 +57,6 @@ class SkinContinuum extends SkinMustache {
 	protected function runOnSkinTemplateNavigationHooks( SkinTemplate $skin, &$content_navigation ) {
 		parent::runOnSkinTemplateNavigationHooks( $skin, $content_navigation );
 		Hooks::onSkinTemplateNavigation( $skin, $content_navigation );
-	}
-	public function initPage(OutputPage $out) {
-		parent::initPage($out);
-		
-		// Get user theme preference
-		$user = $this->getUser();
-		$theme = $user->getOption('continuum-theme', 'dark'); // Default is dark
-	
-		// Apply theme class
-		$out->addHtmlClasses('continuum-theme-' . $theme);
-	
-		// Load the JS (if any) and CSS
-		$out->addModules([
-			'skins.Continuum.themeSwitcher'
-		]);
 	}
 	
 	
@@ -349,6 +335,11 @@ class SkinContinuum extends SkinMustache {
 		$localizer = $this->getContext();
 		$title = $this->getTitle();
 
+		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+
+	    $customTheme = $userOptionsLookup->getOption($user, 'continuum-custom-theme', 'medium');
+
+
 		// If the table of contents has no items, we won't output it.
 		// empty array is interpreted by Mustache as falsey.
 		$tocComponents = [];
@@ -404,19 +395,6 @@ class SkinContinuum extends SkinMustache {
 
 		$isRegistered = $user->isRegistered();
 		$userPage = $isRegistered ? $this->buildPersonalPageItem() : [];
-		Constants::PREF_KEY_THEME => [
-			'type' => 'select',
-			'label-message' => 'continuum-theme-label',
-			'help-message' => 'continuum-theme-description',
-			'section' => 'rendering/skin/skin-prefs',
-			'options-messages' => [
-				'continuum-theme-light-label' => 'light',
-				'continuum-theme-medium-label' => 'medium',
-				'continuum-theme-dark-label' => 'dark',
-			],
-			'default' => 'dark',  // Set default to medium if preferred
-			'hide-if' => [ '!==', 'skin', Constants::SKIN_NAME_MODERN ],
-		]
 
 		$components = $tocComponents + [
 			'data-add-topic-button' => $hasAddTopicButton ? new ContinuumComponentButton(
@@ -544,6 +522,11 @@ class SkinContinuum extends SkinMustache {
 			'is-language-in-content-bottom' => $this->isLanguagesInContentAt( 'bottom' ),
 			// Cast empty string to null
 			'html-subtitle' => $parentData['html-subtitle'] === '' ? null : $parentData['html-subtitle'],
+			
+			// Pass the custom theme to Mustache
+			'theme' => $customTheme
 		] );
 	}
 }
+
+

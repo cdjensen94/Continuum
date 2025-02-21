@@ -9,10 +9,17 @@
 	"namemsg": "Continuum-specialversion-name",
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
+	"config": {
+		"ContinuumNightModeOptions": {
+			"dark": true,
+			"medium": false,
+			"light": false
+		}
+	},
 	"requires": {
 		"MediaWiki": ">= 1.43"
 	},
-	"credits":{
+	"credits": {
 		"authors": [
 			"[https://www.mediawiki.org/wiki/Readers/Web/Team Readers Web Team]",
 			"Trevor Parscal",
@@ -115,14 +122,14 @@
 				}
 			]
 		},
-		"continuum": {
+		"continuumLegacy": {
 			"class": "MediaWiki\\Skins\\Continuum\\SkinContinuumLegacy",
 			"services": [
 				"LanguageConverterFactory"
 			],
 			"args": [
 				{
-					"name": "continuum",
+					"name": "continuum-legacy",
 					"supportsMwHeading": true,
 					"wrapSiteNotice": true,
 					"template": "skin-legacy",
@@ -208,6 +215,7 @@
 	"Hooks": {
 		"CentralAuthIsUIReloadRecommended": "ContinuumCentralAuthHooks",
 		"GetPreferences": "MediaWiki\\Skins\\Continuum\\Hooks::onGetPreferences",
+		"BeforePageDisplay": "MediaWiki\\Skins\\Continuum\\Hooks::onBeforePageDisplay",
 		"LocalUserCreated": "ContinuumHooks",
 		"SkinPageReadyConfig": "ContinuumHooks",
 		"GetBetaFeaturePreferences": "ContinuumHooks"
@@ -224,6 +232,7 @@
 				"CdxMessage"
 			]
 		},
+
 		"skins.continuum.search.codex.scripts": {
 			"dependencies": [
 				"skins.continuum.search.codex.styles"
@@ -257,14 +266,14 @@
 				"continuum-searchsuggest-containing"
 			]
 		},
-		"skins.Continuum.themeSwitcher": {
+		"skins.continuum.themeSwitcher": {
 			"scripts": [
-				"resources/js/themeSwitcher.js"
+				"resources/skins.continuum.js/userPreferences.js"
 			],
 			"dependencies": [
+				"mediawiki.user",
 				"mediawiki.util"
-			],
-			"position": "top"
+			]
 		},
 		"skins.continuum.styles.legacy": {
 			"class": "MediaWiki\\ResourceLoader\\SkinModule",
@@ -374,14 +383,15 @@
 		"skins.continuum.clientPreferences": {
 			"packageFiles": [
 				"resources/skins.continuum.clientPreferences/clientPreferences.js",
+				"resources/skins.continuum.js/clientPreferences.js",
 				"resources/skins.continuum.clientPreferences/clientPreferences.less"
 			],
 			"messages": [
-				"continuum-theme-label",
 				"continuum-theme-description",
-				"continuum-theme-light-label",
-				"continuum-theme-medium-label",
-				"continuum-theme-dark-label",
+				"continuum-theme-label",
+				"continuum-theme-light",
+				"continuum-theme-medium",
+				"continuum-theme-dark",
 				"continuum-theme-beta-tag",
 				"continuum-theme-issue-reporting-link-label",
 				"continuum-theme-issue-reporting-notice-url"
@@ -525,9 +535,42 @@
 				"skinStyles/jquery.ui/jquery.ui.tabs.css",
 				"skinStyles/jquery.ui/jquery.ui.tooltip.css"
 			],
-			"dark": "resources/skins.Continuum.styles/themes/dark.less",
-			"medium": "resources/skins.Continuum.styles/themes/medium.less",
-			"light": "resources/skins.Continuum.styles/themes/light.less"
+			"skins.continuum.base": {
+				"styles": [
+					"resources/css/variables.css",
+					"resources/css/main.css",
+					"resources/css/navbar.css",
+					"resources/css/sidebar.css",
+					"resources/css/footer.css",
+					"resources/css/typography.css",
+					"resources/css/toc.css",
+					"resources/css/infobox.css",
+					"resources/css/buttons.css",
+					"resources/css/images.css",
+					"resources/css/search.css",
+					"resources/css/user-links.css",
+					"resources/css/notifications.css",
+					"resources/css/responsive.css"
+				]
+			},
+			"skins.continuum.dark": {
+				"styles": [
+					"resources/css/variables-dark.css",
+					"resources/css/dark-mode.css"
+				]
+			},
+			"skins.continuum.medium": {
+				"styles": [
+					"resources/css/variables-medium.css",
+					"resources/css/medium-mode.css"
+				]
+			},
+			"skins.continuum.light": {
+				"styles": [
+					"resources/css/variables-light.css",
+					"resources/css/light-mode.css"
+				]
+			}
 		}
 	},
 	"QUnitTestModule": {

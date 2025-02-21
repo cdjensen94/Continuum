@@ -8,12 +8,8 @@
         "preferenceKey": "continuum-limited-width"
     },
     "skin-theme": {
-        "options": [
-            "light",
-            "medium",
-            "dark"
-        ],
-        "preferenceKey": "continuum-theme"
+        "options": [ "light", "medium", "dark" ],
+        "preferenceKey": "continuum-subtheme",
+        "default": "dark"
     }
-
 }

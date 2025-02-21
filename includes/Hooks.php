@@ -14,6 +14,8 @@ use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
 use MediaWiki\User\PreferencesFactory;
 use MediaWiki\User\UserIdentity;
+use mediawiki\User\UserOptionsLookup;
+use MediaWiki\Output\OutputPage;
 use RuntimeException;
 use SkinTemplate;
 
@@ -559,27 +561,11 @@ class Hooks implements
 			],
 			Constants::PREF_KEY_APPEARANCE_PINNED => [
 				'type' => 'api'
-			]
-
+			],		
 		];
-	
-		// 🎨 Custom Theme Options (Dark, Medium, Light)
-		$continuumPrefs['continuum-theme'] = [
-			'type' => 'select',
-			'label-message' => 'continuum-theme-label', // Add to i18n if needed
-			'section' => 'rendering/skin/skin-prefs',
-			'options' => [
-				'Dark Mode' => 'dark',
-				'Medium Mode' => 'medium',
-				'Light Mode' => 'light'
-			],
-			'default' => 'dark'
-		];
-	
 		// Merge all preferences into $prefs
 		$prefs += $continuumPrefs;
 	}
-	
 
 	/**
 	 * Called one time when initializing a users preferences for a newly created account.

@@ -24,6 +24,7 @@ namespace MediaWiki\Skins\Continuum\FeatureManagement;
 
 use MediaWiki\Context\IContextSource;
 use MediaWiki\Skins\Continuum\ConfigHelper;
+use MediaWiki\Config\ConfigException;
 use MediaWiki\Skins\Continuum\Constants;
 use MediaWiki\Skins\Continuum\FeatureManagement\Requirements\SimpleRequirement;
 use MediaWiki\User\Options\UserOptionsLookup;
@@ -193,26 +194,6 @@ class FeatureManager {
 					break;
 				// This feature has 4 possible states: day, night, os and -excluded.
 				// It persists for all users.
-				case CONSTANTS::PREF_NIGHT_MODE:
-					// if night mode is disabled for the page, add the exclude class instead and return early
-					if ( ConfigHelper::shouldDisable( $config->get( 'ContinuumNightModeOptions' ), $request, $title ) ) {
-						// The additional "-" prefix, makes this an invalid client preference for anonymous users.
-						return 'skin-theme-clientpref--excluded';
-					}
-
-					$prefix = '';
-					$valueRequest = $request->getRawVal( 'continuumnightmode' );
-					// If night mode query string is used, hardcode pref value to the night mode value
-					// NOTE: The query string parameter only works for logged in users.
-					// IF you have set a cookie locally this will be overriden.
-					$value = $valueRequest !== null ? self::resolveNightModeQueryValue( $valueRequest ) :
-						$this->getUserPreferenceValue( CONSTANTS::PREF_KEY_NIGHT_MODE );
-					$suffixEnabled = 'clientpref-' . $value;
-					$suffixDisabled = 'clientpref-day';
-					// Must be hardcoded to 'skin-theme-' to be consistent with Minerva
-					// So that editors can target the same class across skins
-					$prefix .= 'skin-theme-';
-					break;
 				// These features persist for all users and have two valid states: 0 and 1.
 				case CONSTANTS::FEATURE_LIMITED_WIDTH:
 				case CONSTANTS::FEATURE_TOC_PINNED:
@@ -321,24 +302,6 @@ class FeatureManager {
 		return $this->requirements[$name]->isMet();
 	}
 
-	/**
-	 * Converts "1", "2", and "0" to equivalent values.
-	 *
-	 * @return string
-	 */
-	private static function resolveNightModeQueryValue( string $value ) {
-		switch ( $value ) {
-			case 'light':
-			case 'medium':
-			case 'dark':
-				return $value;
-			case '1':
-				return 'dark';    // Optional: Map numeric value to 'dark'
-			case '2':
-				return 'medium';  // Optional: Map numeric value to 'medium'
-			default:
-				return 'light';   // Default to 'light' if unrecognized
-		}
-	}
+
 
 }
