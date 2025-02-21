@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Better",
+			"Crucifunked",
+			"HackerPunki",
+			"Julio Nepote"
+		]
+	},
+	"continuum-languages": "Luengas",
+	"continuum-no-language-button-label": "Añidil idiomas",
+	"continuum-action-addsection": "Añidil tema",
+	"continuum-action-delete": "Esborral",
+	"continuum-action-move": "Mual",
+	"continuum-action-protect": "Protegel",
+	"continuum-action-undelete": "Esborral",
+	"continuum-action-unprotect": "Esprotegel",
+	"continuum-view-create": "Crial",
+	"continuum-view-edit": "Edital",
+	"continuum-view-history": "Guipal l'estorial",
+	"continuum-view-view": "Leyel",
+	"continuum-view-viewsource": "Guipal cóigu",
+	"continuum-more-actions": "Más",
+	"continuum-feature-custom-font-size-name": "Testu",
+	"skin-theme-name": "Colol",
+	"continuum-main-menu-label": "Menú prencipal",
+	"continuum-page-tools-label": "Achiperris",
+	"continuum-page-tools-general-label": "General",
+	"continuum-unpin-element-label": "açonchal"
+}

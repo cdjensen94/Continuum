@@ -1,0 +1,126 @@
+.continuum-toc {
+	.continuum-pinnable-header {
+		margin-left: @toc-list-item-padding-start;
+	}
+
+	.continuum-pinnable-header-label {
+		font-size: @font-size-reset; // Update font-size because the label is an <h2>
+	}
+
+	.continuum-toc-numb {
+		display: none;
+	}
+
+	.continuum-toc-toggle {
+		// For no-js users, toggling is disabled and icon is hidden
+		display: none;
+		transition: @transition-duration-base;
+		position: absolute;
+		left: -@size-toc-subsection-toggle/2;
+		// Visual centering.
+		top: 1px;
+		// Override .cdx-button styles
+		min-width: @size-toc-subsection-toggle; // ~px @ 12
+		min-height: @size-toc-subsection-toggle;
+		padding: 0;
+		font-size: @size-toc-subsection-toggle-icon;
+	}
+
+	.continuum-toc-link {
+		display: block;
+		word-break: break-word;
+	}
+
+	// Highlight and bold active sections, active top sections that are unexpanded
+	// and active top sections that are the only active element.
+	.continuum-toc-list-item-active,
+	.continuum-toc-level-1-active:not( .continuum-toc-list-item-expanded ),
+	.continuum-toc-list-item-active.continuum-toc-level-1-active {
+		> .continuum-toc-link {
+			// Highlight active section
+			.mixin-continuum-selected-link();
+			font-weight: bold;
+
+			.continuum-toc-text {
+				// Increase width to prevent line wrapping due to bold text
+				// Avoid applying on link element to avoid focus indicator changing size
+				width: ~'calc( 100% + @{padding-horizontal-dropdown-menu} )';
+			}
+		}
+	}
+
+	// Highlight active top sections that contain an active section
+	.continuum-toc-level-1-active:not( .continuum-toc-list-item-active ) > .continuum-toc-link {
+		.mixin-continuum-selected-link();
+	}
+
+	.continuum-toc-text {
+		// Match .mixin-continuum-dropdown-menu-item() vertical padding
+		padding: @padding-vertical-dropdown-menu-item 0;
+	}
+
+	.continuum-toc-contents,
+	.continuum-toc-list {
+		margin: 0;
+		list-style: none;
+	}
+
+	.continuum-toc-list-item {
+		position: relative;
+		list-style-type: none;
+		padding-left: @toc-list-item-padding-start;
+		margin: 0;
+	}
+}
+
+// Collapse ToC sections by default, excluding no-js
+.client-js .continuum-toc {
+	.continuum-toc-level-1 .continuum-toc-list-item {
+		display: none;
+	}
+
+	.continuum-toc-level-1.continuum-toc-list-item-expanded .continuum-toc-list-item {
+		display: block;
+	}
+
+	.continuum-toc-toggle {
+		display: block;
+	}
+
+	.continuum-toc-level-1.continuum-toc-list-item-expanded .continuum-toc-toggle {
+		transform: rotate( 0deg );
+	}
+}
+
+.client-js body.ltr .continuum-toc .continuum-toc-toggle {
+	transform: rotate( -90deg );
+}
+
+.client-js body.rtl .continuum-toc .continuum-toc-toggle {
+	transform: rotate( 90deg );
+}
+
+// Ensure there is only 1 table of contents landmark at anytime
+.continuum-toc-landmark {
+	display: none;
+}
+
+.continuum-feature-toc-pinned-clientpref-0 body:not( .continuum-sticky-header-visible ) .continuum-page-titlebar,
+.continuum-feature-toc-pinned-clientpref-0 .continuum-sticky-header-visible .continuum-sticky-header-context-bar,
+.continuum-feature-toc-pinned-clientpref-1 .continuum-column-start {
+	.continuum-toc-landmark {
+		display: block;
+	}
+}
+
+// On smaller viewports the TOC will always be moved to the page titlebar via JS
+// regardless of the TOC pinned classes
+@media ( max-width: @max-width-breakpoint-tablet ) {
+	.client-js .continuum-page-titlebar .continuum-toc-landmark {
+		display: block;
+	}
+
+	.client-js .mw-table-of-contents-container.continuum-toc-landmark {
+		display: none;
+	}
+}

@@ -1,0 +1,56 @@
+/* ===== User Links (Upper Right Corner) ===== */
+#p-personal {
+    background-color: var(--dark-navy);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+#p-personal li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#p-personal a {
+    color: var(--bright-orange);
+    font-weight: bold;
+}
+
+#p-personal a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}
+
+/* Specific User Links */
+#pt-userpage a,
+#pt-mytalk a,
+#pt-preferences a,
+#pt-watchlist a,
+#pt-mycontris a,
+#pt-notifications a,
+#pt-echo a,
+#pt-login a,
+#pt-createaccount a {
+    color: var(--bright-orange);
+}
+
+#pt-userpage a:hover,
+#pt-mytalk a:hover,
+#pt-preferences a:hover,
+#pt-watchlist a:hover,
+#pt-mycontris a:hover,
+#pt-notifications a:hover,
+#pt-echo a:hover,
+#pt-login a:hover,
+#pt-createaccount a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}
+
+/* Logout Link Emphasis */
+#pt-logout a {
+    color: var(--burnt-orange);
+}
+
+#pt-logout a:hover {
+    color: #FF6347;
+}

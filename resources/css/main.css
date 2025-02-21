@@ -1,0 +1,17 @@
+/* Import all modular files */
+@import url('variables.css');
+@import url('typography.css');
+@import url('layout.css');
+@import url('navbar.css');
+@import url('toc.css');
+@import url('user-links.css');
+@import url('sidebar.css');
+@import url('infobox.css');
+@import url('footer.css');
+@import url('buttons.css');
+@import url('editor.css');
+@import url('search.css');
+@import url('images.css');
+@import url('notifications.css');
+@import url('responsive.css');
+@import url('dark-mode.css'); /* Optional */

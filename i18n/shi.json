@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"AguzulH",
+			"Amara-Amaziɣ",
+			"Ayour2002",
+			"Dalinanir",
+			"Lhoussine AIT TAYFST"
+		]
+	},
+	"continuum-languages": "Tutlayin",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 tutlayt|$1 tutlayin}}",
+	"continuum-no-language-button-label": "Rnu tutlayin",
+	"continuum-action-addsection": "Rnu asntl",
+	"continuum-action-delete": "Kks",
+	"continuum-action-move": "Smatti",
+	"continuum-action-protect": "Qqil",
+	"continuum-action-undelete": "Rard may mayḥiydn",
+	"continuum-action-unprotect": "ssnfl aḥbu",
+	"continuum-view-create": "Snulfu",
+	"continuum-view-edit": "Snfl",
+	"continuum-view-history": "Ẓr amzruy",
+	"continuum-view-view": "Ɣr",
+	"continuum-view-viewsource": "Ẓr aɣbalu",
+	"continuum-more-actions": "Uggar",
+	"continuum-searchsuggest-containing": "Siggl tasniwin ɣ illa <strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong>",
+	"continuum-page-tools-label": "Imassn",
+	"continuum-unpin-element-label": "ssntl"
+}

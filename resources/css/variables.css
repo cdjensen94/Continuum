@@ -1,0 +1,35 @@
+/* Color Palette */
+:root {
+    --navy: #001F3F;
+    --dark-navy: #001933;
+    --mid-navy: #002B5C;
+    --bright-orange: #FF851B;
+    --soft-peach: #FFB84D;
+    --burnt-orange: #FF4500;
+    --azure: #7FDBFF;
+    --white: #FFFFFF;
+    --gray: #AAAAAA;
+
+    /* Font Families */
+    --font-primary: 'Bona Nova', serif;
+    --font-header: 'Metamorphous', cursive;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bright-orange);
+    border-radius: 10px;
+    border: 3px solid var(--navy);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--soft-peach);
+}

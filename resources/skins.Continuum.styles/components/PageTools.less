@@ -1,0 +1,21 @@
+// Ensure there is only 1 page tools landmark at anytime
+.continuum-feature-page-tools-pinned-enabled .continuum-page-toolbar-container .continuum-page-tools-landmark,
+.continuum-feature-page-tools-pinned-disabled .continuum-column-end .continuum-page-tools-landmark {
+	display: none;
+}
+
+// Ensure collapsible items are visible on lower resolutions
+.continuum-page-tools .continuum-more-collapsible-item {
+	display: block;
+
+	@media ( min-width: @min-width-breakpoint-tablet ) {
+		display: none;
+	}
+}
+
+// Make sure pcactions is displayed on lower resolutions (even if .emptyPortlet present)
+.continuum-page-tools .continuum-has-collapsible-items {
+	@media ( max-width: @max-width-breakpoint-mobile ) {
+		display: block;
+	}
+}

@@ -1,0 +1,19 @@
+{
+    "continuum-feature-custom-font-size": {
+        "options": [ "0", "1", "2" ],
+        "preferenceKey": "continuum-font-size"
+    },
+    "continuum-feature-limited-width": {
+        "options": [ "1", "0" ],
+        "preferenceKey": "continuum-limited-width"
+    },
+    "skin-theme": {
+        "options": [
+            "light",
+            "medium",
+            "dark"
+        ],
+        "preferenceKey": "continuum-theme"
+    }
+
+}

@@ -1,0 +1,53 @@
+/* ===== Universal Image Reset ===== */
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    border: none;
+    filter: none;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect */
+img:hover {
+    opacity: 0.9;
+}
+
+/* Wiki Logo */
+#p-logo a, #p-logo a img {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 0 5px rgba(255, 133, 27, 0.7));
+}
+
+/* Thumbnails & Gallery */
+.thumb img, .gallery img {
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.thumb img:hover, .gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+/* Infobox Images */
+.infobox img {
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SVG Images */
+img[src$=".svg"] {
+    filter: drop-shadow(0 0 5px rgba(255, 133, 27, 0.7));
+}

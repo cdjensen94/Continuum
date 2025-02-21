@@ -1,0 +1,29 @@
+/* ===== Sidebar Styling ===== */
+#mw-panel {
+    background-color: var(--mid-navy);
+    color: var(--white);
+    padding: 10px;
+}
+
+#mw-panel a {
+    color: var(--bright-orange);
+    text-decoration: none;
+}
+
+#mw-panel a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}
+
+/* Sidebar Headings */
+#mw-panel .portal h3 {
+    font-family: var(--font-header);
+    color: var(--bright-orange);
+    margin-top: 0;
+}
+
+/* Sidebar Collapsible */
+.vector-menu-collapsible {
+    border-bottom: 1px solid var(--bright-orange);
+    margin-bottom: 10px;
+}

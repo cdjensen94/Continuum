@@ -1,0 +1,229 @@
+/**
+* UserLinks
+* All links and menus that appear in the header,
+* at the top of the page, after the search bar.
+*/
+
+/**
+ * Top-most container that holds ALL menus in the user links section
+ * (horizontal menus and dropdowns)
+ * Logged-in and logged-out.
+ */
+.continuum-user-links {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: flex-end;
+	flex-shrink: 1;
+
+	// Spacing for all top-level menu icons.
+	.mw-list-item,
+	.continuum-dropdown-label {
+		margin: 0 @spacing-25;
+	}
+	// Reset margins on items inside dropdowns.
+	.continuum-dropdown-content .mw-list-item {
+		margin: 0;
+	}
+}
+
+/**
+ * Container that holds just the dropdown user menu (displays "..." when logged out).
+ * Logged-in and logged-out.
+ */
+.continuum-user-menu {
+	.continuum-dropdown-content {
+		.mixin-continuum-dropdown-content-flip();
+	}
+
+	// Used to hide collapsible items inside the dropdown menu
+	// as well as the dropdown menu itself when the menu is empty
+	&.user-links-collapsible-item,
+	.user-links-collapsible-item {
+		@media ( min-width: @min-width-breakpoint-tablet ) {
+			display: none;
+		}
+
+		&--none {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Container that holds all menus except the user menu (.continuum-user-menu).
+ * Logged-in and logged-out.
+ */
+.continuum-user-links-main {
+	display: flex;
+	align-items: center;
+
+	.continuum-menu-content-list {
+		display: flex;
+		align-items: center;
+		font-size: @font-size-small;
+	}
+
+	.user-links-collapsible-item {
+		@media ( max-width: @max-width-breakpoint-mobile ) {
+			display: none;
+		}
+	}
+}
+
+/**
+ * Logged-in dropdown user menu.
+ */
+.continuum-user-menu-logged-in .continuum-dropdown-label {
+	.mixin-continuum-arrowed-dropdown-toggle();
+}
+
+/**
+ * Logged-out dropdown user menu items- Special treatment for special links.
+ */
+#p-user-menu-anon-editor .continuum-menu-heading {
+	display: block;
+
+	a::before {
+		content: '@{msg-parentheses-start}';
+	}
+
+	a::after {
+		content: '@{msg-parentheses-end}';
+	}
+}
+
+/**
+ * Logged-in user-page link in personal (overflow) menu.
+ */
+#pt-userpage-2 {
+	max-width: unit( 155 / @font-size-browser / @font-size-small, em );
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	a:not( .mw-selflink ) {
+		// T312157 Override redlink (.new) color for non-existant userpage
+		color: @color-progressive;
+	}
+
+	span {
+		.text-overflow( @visible: false );
+	}
+
+	// T2875#7295558: Increase the max-width of the username when viewport
+	// allows for it.
+	@media ( min-width: @min-width-breakpoint-desktop-wide ) {
+		max-width: unit( 200 / @font-size-browser / @font-size-small, em );
+	}
+}
+
+/* ================================
+ 👤 User Links Base Styles
+================================ */
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: var(--user-links-bg);
+}
+
+/* ================================
+ 🔗 User Link Items
+================================ */
+.user-links a {
+    color: var(--user-links-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.user-links a:hover {
+    color: var(--user-links-hover);
+    background-color: var(--user-links-bg-hover);
+}
+
+/* ================================
+ 🚪 Logout Button Emphasis
+================================ */
+.user-links .logout a {
+    color: var(--color-burnt-orange);
+    border: 1px solid transparent;
+}
+
+.user-links .logout a:hover {
+    background-color: var(--color-burnt-orange);
+    color: #FFFFFF;
+}
+
+/* ================================
+ 📱 Responsive Design
+================================ */
+@media screen and (max-width: 768px) {
+    .user-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/* ================================
+ 🌤️ Light Mode Overrides
+================================ */
+[data-theme="light"] .user-links {
+    background-color: var(--color-light-gray);
+}
+
+[data-theme="light"] .user-links a {
+    color: var(--color-navy);
+}
+
+[data-theme="light"] .user-links a:hover {
+    color: var(--color-lavender);
+    background-color: rgba(200, 200, 200, 0.4);
+}
+
+[data-theme="light"] .user-links .logout a {
+    color: var(--color-burnt-orange);
+}
+
+/* ================================
+ 🌓 Medium Mode Overrides
+================================ */
+[data-theme="medium"] .user-links {
+    background-color: #3B4252; /* Slate */
+}
+
+[data-theme="medium"] .user-links a {
+    color: var(--color-azure);
+}
+
+[data-theme="medium"] .user-links a:hover {
+    color: var(--color-bright-orange);
+    background-color: rgba(255, 133, 27, 0.1);
+}
+
+/* ================================
+ 🌙 Dark Mode Overrides
+================================ */
+[data-theme="dark"] .user-links {
+    background-color: #001D3D;
+}
+
+[data-theme="dark"] .user-links a {
+    color: var(--color-soft-peach);
+}
+
+[data-theme="dark"] .user-links a:hover {
+    color: var(--color-bright-orange);
+    background-color: rgba(255, 133, 27, 0.15);
+}
+
+[data-theme="dark"] .user-links .logout a {
+    color: var(--color-burnt-orange);
+    border: 1px solid var(--color-burnt-orange);
+}
+

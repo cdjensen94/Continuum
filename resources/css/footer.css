@@ -1,0 +1,28 @@
+/* ===== Footer Styling ===== */
+#footer {
+    background-color: var(--mid-navy);
+    border-top: 3px solid var(--bright-orange);
+    padding: 10px 20px;
+    color: var(--white);
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#footer a {
+    color: var(--bright-orange);
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}
+
+/* Footer Links */
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 15px;
+}

@@ -1,0 +1,29 @@
+/* ===== Button Styling ===== */
+.mw-ui-button {
+    background-color: var(--bright-orange);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mw-ui-button:hover {
+    background-color: var(--soft-peach);
+}
+
+.mw-ui-button:active {
+    background-color: var(--burnt-orange);
+    color: var(--white);
+}
+
+.mw-ui-button.secondary {
+    background-color: var(--mid-navy);
+    border: 1px solid var(--bright-orange);
+}
+
+.mw-ui-button.secondary:hover {
+    background-color: var(--bright-orange);
+    color: var(--white);
+}

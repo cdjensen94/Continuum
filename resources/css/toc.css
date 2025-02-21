@@ -1,0 +1,49 @@
+/* ===== Table of Contents (TOC) ===== */
+#toc {
+    background-color: var(--mid-navy);
+    border: 2px solid var(--bright-orange);
+    border-radius: 8px;
+    padding: 10px;
+    width: fit-content;
+    color: var(--white);
+}
+
+#toc h2 {
+    font-family: var(--font-header);
+    color: #FF6300;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#toc li {
+    margin: 4px 0;
+}
+
+#toc a {
+    color: var(--bright-orange);
+}
+
+#toc a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}
+
+#toc .toclevel-1 > a {
+    font-weight: bold;
+}
+
+#toc .tocnumber {
+    color: var(--burnt-orange);
+}
+
+#toc .current {
+    background-color: var(--burnt-orange);
+    color: var(--white);
+    padding: 2px 4px;
+    border-radius: 4px;
+}

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"26agcp",
+			"Lorenzoitza"
+		]
+	},
+	"continuum-language-button-label": "{{PLURAL:$1|Junp'éel t'aan|$1 t'aano'ob}}",
+	"continuum-action-delete": "Tupej",
+	"continuum-view-edit": "K'eex",
+	"continuum-view-history": "Ba'ax a ilmaj",
+	"continuum-view-view": "Xook",
+	"continuum-more-actions": "U la'ak'"
+}

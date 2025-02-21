@@ -1,0 +1,20 @@
+<header class="continuum-header mw-header">
+	<div class="continuum-header-start">
+		<nav class="continuum-main-menu-landmark" aria-label="{{msg-continuum-site-nav-label}}">
+			{{>MainMenuDropdown}}
+		</nav>
+		{{#data-logos}}{{>Logo}}{{/data-logos}}
+	</div>
+	<div class="theme-selector">
+    	<label for="theme-toggle">🎨 Theme:</label>
+		<select id="theme-toggle">
+			<option value="dark">🌑 Dark</option>
+			<option value="medium">🌗 Medium</option>
+			<option value="light">🌞 Light</option>
+		</select>
+	</div>
+	<div class="continuum-header-end">
+		{{#data-search-box}}{{>SearchBox}}{{/data-search-box}}
+		{{#data-continuum-user-links}}{{>UserLinks}}{{/data-continuum-user-links}}
+	</div>
+</header>

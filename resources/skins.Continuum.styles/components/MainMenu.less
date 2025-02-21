@@ -1,0 +1,27 @@
+// Ensure there is only 1 main menu landmark at anytime
+.continuum-feature-main-menu-pinned-enabled .continuum-header-start .continuum-main-menu-landmark,
+.continuum-feature-main-menu-pinned-disabled .continuum-main-menu-container .continuum-main-menu-landmark {
+	display: none;
+}
+
+.continuum-main-menu {
+
+	// Hide #p-navigation label
+	#p-navigation .continuum-menu-heading {
+		display: none;
+	}
+
+	// Match styles of .mw-list-item a in PinnableElement.less
+	.continuum-main-menu-action-opt-out a,
+	.continuum-main-menu-action-lang-alert .continuum-main-menu-action-content {
+		.mixin-continuum-dropdown-menu-item();
+	}
+
+	.continuum-main-menu-action-opt-out a {
+		font-weight: bold;
+	}
+
+	.continuum-main-menu-action-lang-alert .continuum-main-menu-action-content {
+		padding-top: 0;
+	}
+}

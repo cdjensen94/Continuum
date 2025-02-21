@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agilight",
+			"Altai uul",
+			"Bakpay",
+			"HalanTul",
+			"Батыр Комдошев"
+		]
+	},
+	"continuum-languages": "Тилдер",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 тил|$1 тилдер}}",
+	"continuum-no-language-button-label": "Тилдер кожоры",
+	"continuum-action-addsection": "Тема кожор",
+	"continuum-action-delete": "Јоголтор",
+	"continuum-action-move": "Адын солыыр",
+	"continuum-action-protect": "Корыыр",
+	"continuum-action-undelete": "Орныктырар",
+	"continuum-action-unprotect": "Корышты солыыр",
+	"continuum-view-create": "Јайалга",
+	"continuum-view-edit": "Тӱзедери",
+	"continuum-view-history": "Тӱӱкини кӧргӱзер",
+	"continuum-view-view": "Кычырар",
+	"continuum-view-viewsource": "Темдектерин кӧрӧр",
+	"continuum-more-actions": "Кӧптӧдӧ",
+	"continuum-searchsuggest-containing": "<strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong> бар бӱктерди бедрери",
+	"continuum-toc-label": "Толынтызы",
+	"continuum-toc-beginning": "Башталганы",
+	"continuum-main-menu-label": "Тӧс меню",
+	"continuum-page-tools-label": "Јепселдер",
+	"continuum-page-tools-general-label": "Текши",
+	"continuum-unpin-element-label": "јажырар"
+}

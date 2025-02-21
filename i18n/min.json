@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Iwan Novirion",
+			"Luthfi94",
+			"Naval Scene",
+			"VoteITP"
+		]
+	},
+	"skinname-continuum": "Vektor",
+	"continuum-action-addsection": "Bagian baru",
+	"continuum-action-delete": "Hapuih",
+	"continuum-action-move": "Pindahkan",
+	"continuum-action-protect": "Linduangkan",
+	"continuum-action-undelete": "Pambatalan pangapuihan",
+	"continuum-action-unprotect": "Tuka palinduangan",
+	"continuum-view-create": "Buek",
+	"continuum-view-edit": "Suntiang",
+	"continuum-view-history": "Riwayaik",
+	"continuum-view-view": "Baco",
+	"continuum-view-viewsource": "Caliak sumber",
+	"continuum-more-actions": "Lainnyo"
+}

@@ -1,0 +1,28 @@
+/* ===== Search Bar Styling ===== */
+#p-search input {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    padding: 4px 8px;
+    transition: border-color 0.3s ease;
+}
+
+#p-search input:focus {
+    border-color: var(--soft-peach);
+    outline: none;
+}
+
+#p-search button {
+    background-color: var(--bright-orange);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#p-search button:hover {
+    background-color: var(--soft-peach);
+}

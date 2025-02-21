@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"MysticVoyager"
+		]
+	},
+	"continuum-view-edit": "Suqusiqpaa",
+	"continuum-view-history": "takulugu qanuiliurutauqattaqsimajuq",
+	"continuum-appearance-label": "takunnarninga",
+	"continuum-feature-limited-width-name": "sivituninga",
+	"continuum-feature-limited-width-0-label": "siliktuq",
+	"continuum-feature-limited-width-1-label": "saimmati",
+	"continuum-feature-custom-font-size-name": "titiqqaq",
+	"continuum-feature-custom-font-size-0-label": "mikittuq",
+	"continuum-feature-custom-font-size-1-label": "saimmati",
+	"continuum-feature-custom-font-size-2-label": "angijuq",
+	"continuum-searchsuggest-containing": "qinirlugit makpigait iluliqaqtut <strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong>",
+	"continuum-anon-user-menu-pages": "makpigait anisimajunut aaqqiksuijinut",
+	"continuum-main-menu-label": "nirijaksait",
+	"continuum-unpin-element-label": "amirainga"
+}

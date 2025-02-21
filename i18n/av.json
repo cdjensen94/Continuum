@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Augustus A C",
+			"Gazimagomedov",
+			"Omarov M.",
+			"Умар"
+		]
+	},
+	"continuum-skin-desc": "Кверакъула 2 векторияб скиналъе:\n* 2011 - The Modern version of MonoBook with fresh look and many usability improvements.\n* 20 - The Continuum built as part of the WMF [[mw:Desktop Improvements|Desktop Improvements]] project.",
+	"continuum-opt-out": "Басрияб куцалде бачине",
+	"continuum-languages": "МацӀал",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 мацӀ}}",
+	"continuum-action-addsection": "Тема жубазе",
+	"continuum-action-delete": "Гилдизе",
+	"continuum-action-move": "ЦӀар хисизе",
+	"continuum-action-protect": "ЦӀунизе",
+	"continuum-action-undelete": "БукӀахъинабизе",
+	"continuum-action-unprotect": "ЦӀуни хисизе",
+	"continuum-view-create": "ГIуцIизе",
+	"continuum-view-edit": "Хисизабизе",
+	"continuum-view-history": "История бихьизе",
+	"continuum-view-view": "ЦӀализе",
+	"continuum-view-viewsource": "Ицц бихьизе",
+	"continuum-more-actions": "Жеги",
+	"continuum-main-menu-tooltip": "БетӀераб меню",
+	"continuum-main-menu-label": "БетӀераб меню"
+}

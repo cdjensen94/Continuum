@@ -1,0 +1,29 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Metamorphous&display=swap');
+
+/* Global Font Settings */
+body {
+    font-family: var(--font-primary);
+    color: var(--white);
+    background-color: var(--navy);
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header);
+    color: var(--bright-orange);
+}
+
+/* Links */
+a {
+    color: var(--bright-orange);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--soft-peach);
+    text-decoration: underline;
+}

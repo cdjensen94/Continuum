@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"고솜"
+		]
+	},
+	"continuum-action-addsection": "새 이왁거리",
+	"continuum-action-delete": "밀기",
+	"continuum-action-move": "웽기기",
+	"continuum-action-protect": "ᄌᆞᆼ그기",
+	"continuum-view-create": "멩글기",
+	"continuum-view-edit": "바꼬기",
+	"continuum-view-history": "이력 베리기",
+	"continuum-view-view": "익기",
+	"continuum-more-actions": "더 베리기"
+}

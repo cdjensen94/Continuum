@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"C.R.",
+			"Chelin",
+			"Finizio",
+			"Ruthven",
+			"Sannita"
+		]
+	},
+	"continuum-skin-desc": "Verziona muderna 'e MonoBook cu n'aspetto nuovo nuovo e tante migliuramente d'uso",
+	"continuum-languages": "Lengue",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 lengua|$1 lengue}}",
+	"continuum-no-language-button-label": "Azzecca lengue",
+	"continuum-action-addsection": "Aggiunge chiacchierata",
+	"continuum-action-delete": "Scancèlla",
+	"continuum-action-move": "Mòve",
+	"continuum-action-protect": "Prutegge",
+	"continuum-action-undelete": "Arrepiglia",
+	"continuum-action-unprotect": "Càgna prutezzione",
+	"continuum-view-create": "Crèa",
+	"continuum-view-edit": "Càgna",
+	"continuum-view-history": "Vide 'a cronologgia",
+	"continuum-view-view": "Liegge",
+	"continuum-view-viewsource": "Vire sorgente",
+	"continuum-more-actions": "'E 'cchiù",
+	"continuum-searchsuggest-containing": "Truova 'e paggene ca teneno <strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong>",
+	"continuum-toc-label": "Cuntenute",
+	"continuum-page-tools-label": "Strumiente",
+	"continuum-page-tools-general-label": "Generale",
+	"continuum-unpin-element-label": "annascunne"
+}

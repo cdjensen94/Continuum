@@ -1,0 +1,43 @@
+/* ===== Infobox Styling ===== */
+.infobox {
+    border: 2px solid var(--bright-orange);
+    background-color: var(--mid-navy);
+    color: var(--white);
+    width: 250px;
+    font-size: 90%;
+    float: right;
+    margin: 0 0 1em 1em;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.infobox th {
+    background-color: #003366;
+    color: var(--soft-peach);
+    padding: 5px;
+    font-family: var(--font-header);
+    text-align: center;
+    border-bottom: 1px solid var(--bright-orange);
+}
+
+.infobox td {
+    padding: 5px;
+    border-top: 1px solid var(--bright-orange);
+}
+
+.infobox caption {
+    font-family: var(--font-header);
+    font-size: 1.2em;
+    color: var(--soft-peach);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Infobox Images */
+.infobox img {
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+}

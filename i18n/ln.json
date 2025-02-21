@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"CapitainAfrika",
+			"Eruedin",
+			"Moyogo"
+		]
+	},
+	"continuum-languages": "Nkótá",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 lokótá|$1 nkótá}}",
+	"continuum-no-language-button-label": "Kobakisa nkótá",
+	"continuum-action-addsection": "Kobakisa mpɔ̂",
+	"continuum-action-delete": "Kolímwisa",
+	"continuum-action-move": "Kobóngola nkómbó",
+	"continuum-action-protect": "Kobátela",
+	"continuum-action-undelete": "Kolímwisa tɛ̂",
+	"continuum-action-unprotect": " Kobátela tɛ̂",
+	"continuum-view-create": "Kokela",
+	"continuum-view-edit": "Kobɔngisa",
+	"continuum-view-history": "Komɔ́nisa mokóló",
+	"continuum-view-view": "Kotánga",
+	"continuum-view-viewsource": "Komɔ́nisa mosólo",
+	"continuum-more-actions": "Elandí",
+	"skin-theme-name": "Langi",
+	"skin-theme-night-label": "mbwe",
+	"continuum-toc-label": "Etápe",
+	"continuum-main-menu-label": "Elubú ya ntína",
+	"continuum-page-tools-label": "Bisáleli",
+	"continuum-page-tools-general-label": "ya bánsɔ́",
+	"continuum-unpin-element-label": "kobomba"
+}

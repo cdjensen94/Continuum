@@ -1,0 +1,11 @@
+@import 'mediawiki.skin.variables.less';
+
+.continuum-icon {
+	.cdx-mixin-css-icon( 'none' );
+}
+
+/* If the class contains the string -progressive convert to a progressive icon.
+This impacts language button and talk add topic. */
+.continuum-icon[ class*='-progressive' ] {
+	background-color: @color-progressive;
+}

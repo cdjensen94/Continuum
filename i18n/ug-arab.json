@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arlin",
+			"Sahran",
+			"Tel'et",
+			"Uzdil"
+		]
+	},
+	"skinname-continuum": "Continuum",
+	"continuum.css": "/* CSS placed here will affect users of the Continuum skin */",
+	"continuum.js": "/* Any JavaScript here will be loaded for users using the Continuum skin */",
+	"continuum-languages": "تىللار",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 تىل}}",
+	"continuum-no-language-button-label": "تىل قوش",
+	"continuum-action-addsection": "يېڭى تېما قوش",
+	"continuum-action-delete": "ئۆچۈر",
+	"continuum-action-move": "يۆتكە",
+	"continuum-action-protect": "قوغدا",
+	"continuum-action-undelete": "ئەسلىگە قايتۇر",
+	"continuum-action-unprotect": "قوغداش ئۆزگەرت",
+	"continuum-view-create": "قۇر",
+	"continuum-view-edit": "تەھرىرلەش",
+	"continuum-view-history": "تارىخ كۆرسەت",
+	"continuum-view-view": "ئوقۇ",
+	"continuum-view-viewsource": "مەنبەنى كۆرسەت",
+	"continuum-more-actions": "تېخىمۇ كۆپ",
+	"continuum-searchsuggest-containing": "<strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong> نى ئۆز ئىچىگە ئالغان بەتلەرنى ئىزدە",
+	"continuum-toc-label": "مەزمۇنلار",
+	"continuum-toc-beginning": "كىرىش سۆز",
+	"continuum-page-tools-label": "قوراللار",
+	"continuum-page-tools-general-label": "ئادەتتىكى",
+	"continuum-unpin-element-label": "يوشۇر"
+}

@@ -1,0 +1,38 @@
+/* ===== WikiEditor Styling ===== */
+.wikiEditor-ui .editor textarea {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    caret-color: var(--bright-orange);
+}
+
+/* ===== Ace Editor ===== */
+.ace_editor {
+    background-color: var(--dark-navy);
+    color: var(--white);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 14px;
+}
+
+/* Syntax Highlighting */
+.ace_keyword { color: var(--bright-orange); font-weight: bold; }
+.ace_string { color: var(--azure); }
+.ace_comment { color: var(--gray); font-style: italic; }
+.ace_constant { color: var(--burnt-orange); }
+.ace_variable { color: #FFD700; } /* Gold */
+
+/* ===== CodeMirror ===== */
+.CodeMirror {
+    background-color: #1e1e1e;
+    color: var(--white);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+}
+
+.cm-keyword { color: var(--bright-orange); font-weight: bold; }
+.cm-string { color: var(--azure); }
+.cm-comment { color: var(--gray); font-style: italic; }
+.cm-variable { color: var(--soft-peach); }

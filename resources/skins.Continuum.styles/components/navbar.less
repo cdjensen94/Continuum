@@ -1,0 +1,128 @@
+/* ================================
+ 🎨 Navbar Base Styles
+================================ */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--navbar-bg);
+    border-bottom: 3px solid var(--color-bright-orange);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ================================
+ 🖼️ Navbar Logo
+================================ */
+.navbar-logo a {
+    font-family: var(--font-heading);
+    color: var(--navbar-link);
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+    color: var(--navbar-link-hover);
+}
+
+/* ================================
+ 🔗 Navbar Links
+================================ */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: var(--navbar-link);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--navbar-link-hover);
+}
+
+/* ================================
+ 📱 Responsive Navbar
+================================ */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+}
+
+/* ================================
+ 🌤️ Light Mode Overrides
+================================ */
+[data-theme="light"] .navbar {
+    background-color: var(--color-light-gray);
+    border-bottom-color: var(--color-azure);
+}
+
+[data-theme="light"] .navbar-logo a,
+[data-theme="light"] .navbar-links a {
+    color: var(--color-azure);
+}
+
+[data-theme="light"] .navbar-logo a:hover,
+[data-theme="light"] .navbar-links a:hover {
+    color: var(--color-lavender);
+}
+
+/* ================================
+ 🌓 Medium Mode Overrides
+================================ */
+[data-theme="medium"] .navbar {
+    background-color: #3B4252; /* Slate */
+    border-bottom-color: var(--color-azure);
+}
+
+[data-theme="medium"] .navbar-logo a,
+[data-theme="medium"] .navbar-links a {
+    color: var(--color-azure);
+}
+
+[data-theme="medium"] .navbar-logo a:hover,
+[data-theme="medium"] .navbar-links a:hover {
+    color: var(--color-bright-orange);
+}
+
+/* ================================
+ 🌙 Dark Mode Overrides
+================================ */
+[data-theme="dark"] .navbar {
+    background-color: #001D3D;
+    border-bottom-color: var(--color-bright-orange);
+}
+
+[data-theme="dark"] .navbar-logo a,
+[data-theme="dark"] .navbar-links a {
+    color: var(--color-soft-peach);
+}
+
+[data-theme="dark"] .navbar-logo a:hover,
+[data-theme="dark"] .navbar-links a:hover {
+    color: var(--color-bright-orange);
+}

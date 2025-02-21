@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Belkacem77",
+			"Mmistmurt",
+			"YouvaDjouadi"
+		]
+	},
+	"continuum-skin-desc": "Lqem atrar n MonoBook s wudem ilemẓi akked ddeqs n usnerni ucbiḥ",
+	"continuum-action-addsection": "Rnu-d asentel",
+	"continuum-action-delete": "Mḥu",
+	"continuum-action-move": "Snifel isem",
+	"continuum-action-protect": "Mmesten",
+	"continuum-action-undelete": "Uɣaled",
+	"continuum-action-unprotect": "Beddel amesten",
+	"continuum-view-create": "Rnu",
+	"continuum-view-edit": "Ẓreg",
+	"continuum-view-history": "Wali amazray",
+	"continuum-view-view": "Ɣeṛ",
+	"continuum-view-viewsource": "Ẓer aɣbalu",
+	"continuum-more-actions": "Ugar"
+}

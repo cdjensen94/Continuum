@@ -1,0 +1,806 @@
+	/* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Metamorphous&display=swap');
+    .bona-nova-regular {
+        font-family: "Bona Nova", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .bona-nova-bold {
+        font-family: "Bona Nova", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .bona-nova-regular-italic {
+        font-family: "Bona Nova", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .metamorphous-regular {
+        font-family: "Metamorphous", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    /* ===== Global Styles ===== */
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #001F3F; /* Navy */
+        color: #FFFFFF; /* White text */
+        font-family: 'Bona Nova', serif;
+    }
+    
+    /* ===== Headers (Orange Variants) ===== */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Metamorphous', cursive;
+        color: #FF6300; /* Bright Orange */
+    }
+    
+    /* ===== Links ===== */
+    a {
+        color: #FF851B; /* Orange */
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #FFB84D; /* Soft Peach */
+        text-decoration: underline;
+    }
+    
+    /* ===== User Links (Full Coverage) ===== */
+    #p-personal {
+        background-color: #001933;
+        border-radius: 4px;
+        padding: 4px 8px;
+    }
+    
+    #p-personal li {
+        display: inline-block;
+        margin-left: 8px;
+    }
+    
+    #p-personal a {
+        color: #FF851B; /* Orange */
+        font-weight: bold;
+    }
+    
+    #p-personal a:hover {
+        color: #FFB84D; /* Soft Peach */
+        text-decoration: underline;
+    }
+    
+    /* === Specific User Links === */
+    #pt-userpage a,       /* User page */
+    #pt-mytalk a,         /* Talk page */
+    #pt-preferences a,    /* Preferences */
+    #pt-watchlist a,      /* Watchlist */
+    #pt-mycontris a,      /* Contributions */
+    #pt-notifications a,  /* Notifications (Echo) */
+    #pt-echo a,           /* Echo dropdown */
+    #pt-login a,          /* Login */
+    #pt-createaccount a   /* Create Account */ {
+        color: #FF851B;
+    }
+    
+    #pt-userpage a:hover,
+    #pt-mytalk a:hover,
+    #pt-preferences a:hover,
+    #pt-watchlist a:hover,
+    #pt-mycontris a:hover,
+    #pt-notifications a:hover,
+    #pt-echo a:hover,
+    #pt-login a:hover,
+    #pt-createaccount a:hover {
+        color: #FFB84D;
+        text-decoration: underline;
+    }
+    
+    /* Logout Button Specific Styling */
+    #pt-logout a {
+        color: #FF4500; /* Burnt Orange for emphasis */
+    }
+    
+    /* ===== Main Structure ===== */
+    #mw-head {
+        background-color: #001A33;
+        color: #FFFFFF;
+        border-bottom: 3px solid #FF851B;
+    }
+    
+    #mw-panel {
+        background-color: #002855;
+        color: #FFFFFF;
+    }
+    
+    #mw-panel a {
+        color: #FF851B;
+    }
+    
+    #mw-panel a:hover {
+        color: #FFB84D;
+        text-decoration: underline;
+    }
+    
+    #content {
+        background-color: #001933;
+        border: 1px solid #FF851B;
+        padding: 20px;
+        color: #FFFFFF;
+    }
+    .mw-body {
+        background-color: #001F3F; /* Navy */
+        color: #FFFFFF; /* White text */
+    }
+    /* ===== Table of Contents (TOC) ===== */
+    #toc {
+        background-color: #002B5C;
+        border: 2px solid #FF851B;
+        border-radius: 8px;
+        padding: 10px;
+        width: fit-content;
+        color: #FFFFFF;
+    }
+    
+    #toc h2 {
+        font-family: 'Metamorphous', cursive;
+        color: #FF6300;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    
+    #toc ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #toc li {
+        margin: 4px 0;
+    }
+    
+    #toc a {
+        color: #FF851B;
+    }
+    
+    #toc a:hover {
+        color: #FFB84D;
+        text-decoration: underline;
+    }
+    
+    #toc .toclevel-1 > a {
+        font-weight: bold;
+    }
+    
+    #toc .tocnumber {
+        color: #FF4500;
+    }
+    
+    #toc .current {
+        background-color: #FF4500;
+        color: #FFFFFF;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+    /* === Logout Link (Burnt Orange) === */
+    #pt-logout a {
+        color: #FF4500;
+    }
+    
+    #pt-logout a:hover {
+        color: #FF6347;
+    }
+    
+    /* ===== Echo Notifications Dropdown ===== */
+    .mw-echo-ui-notificationsBadgeButton {
+        background-color: #001933;
+        color: #FF851B;
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+        padding: 4px;
+    }
+    
+    .mw-echo-ui-notificationsBadgeButton:hover {
+        background-color: #FF851B;
+        color: #001933;
+    }
+    
+    /* ===== mw-changeslist-legend (TOC-Style) ===== */
+    .mw-changeslist-legend {
+        background-color: #002B5C;
+        border: 2px solid #FF851B;
+        border-radius: 8px;
+        padding: 10px;
+        width: fit-content;
+        color: #FFFFFF;
+        font-size: 90%;
+    }
+    
+    .mw-changeslist-legend h2 {
+        font-family: 'Metamorphous', cursive;
+        color: #FF6300;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .mw-changeslist-legend ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .mw-changeslist-legend li {
+        margin: 4px 0;
+    }
+    .mw-changeslist-legend a {
+        color: #FF851B;
+    }
+    
+    .mw-changeslist-legend a:hover {
+        color: #FFB84D;
+        text-decoration: underline;
+    }
+    
+    /* ===== System Messages ===== */
+    /* Warnings */
+    .mw-warning {
+        background-color: #FF4500;
+        color: #FFFFFF;
+        border-left: 4px solid #FF851B;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    
+    /* Notices */
+    .mw-notice {
+        background-color: #002B5C;
+        color: #FFFFFF;
+        border-left: 4px solid #FF851B;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    
+    /* ===== Infobox Styling ===== */
+    .infobox {
+        border: 2px solid #FF851B;
+        background-color: #002B5C;
+        color: #FFFFFF;
+        width: 250px;
+        font-size: 90%;
+        float: right;
+        margin: 0 0 1em 1em;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .infobox th {
+        background-color: #003366;
+        color: #FFB84D;
+        padding: 5px;
+        font-family: 'Metamorphous', cursive;
+        text-align: center;
+        border-bottom: 1px solid #FF851B;
+    }
+    
+    .infobox td {
+        padding: 5px;
+        border-top: 1px solid #FF851B;
+    }
+    
+    .infobox caption {
+        font-family: 'Metamorphous', cursive;
+        font-size: 1.2em;
+        color: #FFB84D;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    /* ===== Vector 2022 Specific Tweaks ===== */
+    /* Sidebar collapsed state */
+    .vector-menu-tabs li a {
+        color: #FF851B;
+    }
+    
+    .vector-menu-tabs li a:hover {
+        color: #FFB84D;
+    }
+    
+    /* Sticky header in Vector 2022 */
+    .vector-sticky-header {
+        background-color: #001A33;
+        border-bottom: 2px solid #FF851B;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .vector-sticky-header a {
+        color: #FF851B;
+    }
+    
+    .vector-sticky-header a:hover {
+        color: #FFB84D;
+    }
+    /* Default: No Gradient */
+    a, #mw-head .vector-menu-dropdown .vector-menu-heading {
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+    }
+    
+    /* Hover: Full Background Gradient */
+    a:hover, #mw-head .vector-menu-dropdown .vector-menu-heading:hover {
+        background-image: linear-gradient(to bottom, rgba(255, 133, 27, 0) 0, #FF851B 100%);
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensures full coverage */
+        color: #FFFFFF;
+    }
+    
+    /* ===== Updated Legacy Tab Selection ===== */
+    .vector-menu-tabs-legacy .selected {
+        background: #FFB84D; /* Soft Peach for selected tab */
+        color: #001F3F; /* Navy text for contrast */
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #FF851B;
+    }
+    
+    /* ===== Hover State for Non-Selected Tabs ===== */
+    .vector-menu-tabs-legacy li a:hover {
+        background-color: #FF851B;
+        color: #FFFFFF;
+    }
+    
+    /* ===== Optional: Stronger Highlight for Current Page ===== */
+    .vector-menu-tabs-legacy .selected a {
+        font-weight: bold;
+        color: #001F3F;
+    }
+    
+    /* Search bar */
+    #p-search input {
+        background-color: #001933;
+        color: #FFFFFF;
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+        padding: 4px;
+    }
+    
+    #p-search input:focus {
+        border-color: #FFB84D;
+        outline: none;
+    }
+    
+    /* ===== Buttons ===== */
+    .mw-ui-button {
+        background-color: #FF851B;
+        color: #FFFFFF;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .mw-ui-button:hover {
+        background-color: #FFB84D;
+    }
+    
+    /* ===== Scrollbar ===== */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #001F3F;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #FF851B;
+        border-radius: 10px;
+        border: 3px solid #001F3F;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #FFB84D;
+    }
+    /* ===== Universal Image Reset ===== */
+    img {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        opacity: 1; /* Full visibility */
+        border: none;
+        filter: none;
+        transition: opacity 0.3s ease, filter 0.3s ease;
+    }
+    
+    /* ===== Hover Effect for Images (Optional) ===== */
+    img:hover {
+        opacity: 0.9;
+    }
+    
+    /* ===== Wiki Logo Specific Fix ===== */
+    #p-logo a,
+    #p-logo a img {
+        display: block;
+        width: 160px; /* Adjust as needed */
+        height: 160px;
+        opacity: 1;
+        border: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0 0 5px rgba(255, 133, 27, 0.7)); /* Soft orange glow */
+    }
+    
+    /* ===== Vector 2022 Header Image Fix ===== */
+    .vector-header img {
+        width: auto;
+        height: auto;
+        opacity: 1;
+        filter: none;
+    }
+    
+    /* ===== Thumbnails and Gallery Images ===== */
+    .thumb img,
+    .gallery img {
+        border: 1px solid #FF851B; /* Subtle orange border */
+        border-radius: 4px;
+        opacity: 1;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .thumb img:hover,
+    .gallery img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        opacity: 0.95;
+    }
+    
+    /* ===== Infobox Images ===== */
+    .infobox img {
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+        max-width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+    
+    /* ===== SVG Images Handling ===== */
+    img[src$=".svg"] {
+        filter: drop-shadow(0 0 5px rgba(255, 133, 27, 0.7)); /* Glow for SVGs */
+    }
+    
+    /* ===== WikiEditor Monospace Font for Editing Area ===== */
+    .wikiEditor-ui .editor textarea {
+        background-color: #001933; /* Dark Navy */
+        color: #FFFFFF; /* White text */
+        border: 1px solid #FF851B; /* Orange border */
+        border-radius: 4px;
+        padding: 8px;
+    }
+    
+    /* ===== UI Elements Still Use Custom Font ===== */
+    .wikiEditor-ui-toolbar,
+    .wikiEditor-ui-toolbar .group .tool a,
+    .wikiEditor-ui-dialog {
+        font-family: 'Bona Nova', serif; /* Keep custom font for UI */
+        background-color: #001A33;
+        color: #FFFFFF;
+        border: 1px solid #FF851B;
+    }
+    
+    /* ===== Brighter Code/Text Highlights ===== */
+    .wikiEditor-ui .editor textarea::selection {
+        background-color: rgba(255, 133, 27, 0.5); /* Brighter orange highlight */
+        color: #FFFFFF;
+    }
+    
+    /* ===== Syntax Highlighting Tweak ===== */
+    .wikiEditor-ui .editor .syntax-highlight {
+        background-color: #002B5C; /* Lighter navy for code blocks */
+        color: #FFB84D; /* Soft Peach for text */
+    }
+    
+    .wikiEditor-ui .editor .syntax-highlight.keyword {
+        color: #FF851B; /* Bright Orange for keywords */
+    }
+    
+    .wikiEditor-ui .editor .syntax-highlight.string {
+        color: #7FDBFF; /* Azure for strings */
+    }
+    
+    .wikiEditor-ui .editor .syntax-highlight.comment {
+        color: #AAAAAA; /* Soft gray for comments */
+        font-style: italic;
+    }
+    
+    .wikiEditor-ui .editor .syntax-highlight.variable {
+        color: #FF4500; /* Burnt Orange for variables */
+    }
+    
+    /* ===== Cursor Visibility Enhancement ===== */
+    .wikiEditor-ui .editor textarea {
+        caret-color: #FF851B; /* Bright orange caret */
+    }
+    
+    /* ===== Selection Color in Toolbar Inputs ===== */
+    .wikiEditor-ui-toolbar input::selection,
+    .wikiEditor-ui-toolbar textarea::selection {
+        background-color: rgba(255, 133, 27, 0.5);
+        color: #FFFFFF;
+    }
+    
+    /* ===== Hover & Active Effects in Toolbar ===== */
+    .wikiEditor-ui-toolbar .group .tool a:hover {
+        background-color: #FF851B;
+        color: #001933;
+    }
+    
+    .wikiEditor-ui-toolbar .group .tool a:active {
+        background-color: #FF4500;
+        color: #FFFFFF;
+    }
+    /* ===== Ace Editor Base Styling ===== */
+    .ace_editor {
+        background-color: #001933; /* Dark Navy */
+        color: #FFFFFF; /* White text */
+        border: 1px solid #FF851B; /* Orange border */
+        border-radius: 4px;
+        font-family: 'Courier New', 'Consolas', monospace; /* Monospace for cursor alignment */
+        font-size: 14px;
+        line-height: 1.5;
+        caret-color: #FF851B; /* Bright Orange caret */
+    }
+    
+    /* ===== CodeEditor - General Editor Styling ===== */
+    .ace_editor {
+        background-color: #001933; /* Dark Navy Background */
+        color: #FFFFFF; /* Default Text Color */
+        border: 1px solid #FF851B; /* Orange Border */
+        border-radius: 4px;
+        font-family: 'Courier New', 'Consolas', monospace;
+        font-size: 14px;
+    }
+    
+    /* ===== Cursor & Active Line ===== */
+    .ace_cursor {
+        color: #FF851B; /* Bright Orange Cursor */
+    }
+    
+    .ace_marker-layer .ace_active-line {
+        background-color: rgba(255, 133, 27, 0.15); /* Subtle Active Line Highlight */
+    }
+    
+    .ace_marker-layer .ace_selection {
+        background-color: rgba(255, 133, 27, 0.5); /* Brighter Selection */
+    }
+    
+    /* ===== Gutter (Line Numbers) ===== */
+    .ace_gutter {
+        background-color: #002B5C; /* Lighter Navy */
+        color: #FFB84D; /* Soft Peach for Line Numbers */
+        border-right: 1px solid #FF851B;
+    }
+    
+    .ace_gutter-active-line {
+        background-color: rgba(255, 133, 27, 0.1); /* Highlight Active Line Number */
+    }
+    
+    /* ===== Syntax Highlighting ===== */
+    .ace_keyword {
+        color: #FF851B; /* Bright Orange for Keywords */
+        font-weight: bold;
+    }
+    
+    .ace_string {
+        color: #7FDBFF; /* Azure for Strings */
+    }
+    
+    .ace_comment {
+        color: #AAAAAA; /* Soft Gray for Comments */
+        font-style: italic;
+    }
+    
+    .ace_constant {
+        color: #FF4500; /* Burnt Orange for Constants */
+    }
+    
+    .ace_variable {
+        color: #FFD700; /* Gold for Variables */
+    }
+    
+    .ace_function {
+        color: #FFB84D; /* Soft Peach for Functions */
+    }
+    
+    /* ===== Brackets, Tags, & Punctuation ===== */
+    .ace_paren,
+    .ace_bracket {
+        color: #FF851B; /* Orange for Brackets */
+    }
+    
+    .ace_marker-layer .ace_bracket {
+        background-color: rgba(255, 133, 27, 0.25);
+    }
+    
+    /* ===== Error & Warning Highlights ===== */
+    .ace_error {
+        text-decoration: underline;
+        text-decoration-color: #FF4500; /* Burnt Orange for Errors */
+    }
+    
+    .ace_warning {
+        text-decoration: underline;
+        text-decoration-color: #FFD700; /* Gold for Warnings */
+    }
+    
+    /* ===== Scrollbars (Match Dark Mode) ===== */
+    .ace_scrollbar {
+        width: 12px;
+    }
+    
+    .ace_scrollbar-track {
+        background: #001F3F;
+    }
+    
+    .ace_scrollbar-thumb {
+        background-color: #FF851B;
+        border-radius: 10px;
+        border: 3px solid #001F3F;
+    }
+    
+    .ace_scrollbar-thumb:hover {
+        background-color: #FFB84D;
+    }
+    
+    /* ===== Placeholder Text ===== */
+    .ace_placeholder {
+        color: #FFB84D;
+        opacity: 0.7;
+    }
+    
+    /* ===== Tooltips & Popups ===== */
+    .ace_tooltip {
+        background-color: #001933;
+        border: 1px solid #FF851B;
+        color: #FFFFFF;
+        border-radius: 4px;
+    }
+    
+    /* ===== Matching Parens/Brackets ===== */
+    .ace_bracket-highlight {
+        border-bottom: 2px solid #FF851B;
+        background-color: rgba(255, 133, 27, 0.15);
+    }
+    
+    /* ===== Fold Widgets (for code folding) ===== */
+    .ace_fold-widget {
+        color: #FF851B;
+    }
+    
+    .ace_fold-widget:hover {
+        color: #FFB84D;
+    }
+    /* ===== CodeMirror Dark Mode ===== */
+    .CodeMirror {
+        background-color: #1e1e1e;
+        color: #FFFFFF;
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+    }
+    
+    /* Syntax Highlighting */
+    .cm-keyword { color: #FF851B; font-weight: bold; }  /* Orange for keywords */
+    .cm-string { color: #7FDBFF; }                      /* Azure for strings */
+    .cm-comment { color: #AAAAAA; font-style: italic; } /* Soft Gray for comments */
+    .cm-number { color: #FFD700; }                      /* Gold for numbers */
+    .cm-variable { color: #FFB84D; }                    /* Soft Peach for variables */
+    .cm-def { color: #FF4500; }                         /* Burnt Orange for function names */
+    
+    /* Cursor & Selection */
+    .CodeMirror-cursor { border-left: 1px solid #FF851B; }
+    .CodeMirror-selected { background-color: rgba(255, 133, 27, 0.3); }
+    
+    /* Line Numbers */
+    .CodeMirror-gutters {
+        background-color: #002B5C;
+        color: #FFB84D;
+        border-right: 1px solid #FF851B;
+    }
+    /* ===== Vector Skin Override for Ace Editor ===== */
+    .vector-body .ace_editor {
+        background-color: #001933 !important; /* Dark Navy */
+        color: #FFFFFF !important;
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+    }
+    
+    .vector-body .ace_keyword { color: #FF851B !important; font-weight: bold; } /* Orange */
+    .vector-body .ace_string { color: #7FDBFF !important; }                    /* Azure */
+    .vector-body .ace_comment { color: #AAAAAA !important; font-style: italic; } /* Soft Gray */
+    .vector-body .ace_constant { color: #FF4500 !important; }                  /* Burnt Orange */
+    .vector-body .ace_variable { color: #FFD700 !important; }                  /* Gold */
+    .vector-body .ace_cursor { color: #FF851B !important; }                    /* Bright Orange */
+    .vector-body .ace_marker-layer .ace_active-line { background-color: rgba(255, 133, 27, 0.15) !important; }
+    .vector-body .ace_marker-layer .ace_selection { background-color: rgba(255, 133, 27, 0.5) !important; }
+    
+    /* ===== Vector Skin Override for CodeMirror ===== */
+    .vector-body .CodeMirror {
+        background-color: #1e1e1e !important;
+        color: #FFFFFF !important;
+        border: 1px solid #FF851B;
+        border-radius: 4px;
+    }
+    
+    .vector-body .cm-keyword { color: #FF851B !important; font-weight: bold; }
+    .vector-body .cm-string { color: #7FDBFF !important; }
+    .vector-body .cm-comment { color: #AAAAAA !important; font-style: italic; }
+    .vector-body .cm-number { color: #FFD700 !important; }
+    .vector-body .cm-variable { color: #FFB84D !important; }
+    .vector-body .cm-def { color: #FF4500 !important; }
+    .vector-body .CodeMirror-cursor { border-left: 1px solid #FF851B !important; }
+    .vector-body .CodeMirror-selected { background-color: rgba(255, 133, 27, 0.3) !important; }
+    .vector-body .CodeMirror-gutters {
+        background-color: #002B5C !important;
+        color: #FFB84D !important;
+        border-right: 1px solid #FF851B;
+    }
+    /* 🌟 Top Navbar Styles */
+#top-navbar {
+    background-color: #002B5C;
+    border-bottom: 3px solid #FF851B;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Navbar Logo */
+.navbar-logo a {
+    font-family: 'Metamorphous', cursive;
+    color: #FF851B;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #FFB84D;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    #top-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+}

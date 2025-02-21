@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aandeginini",
+			"Nibi-zhimaaganish"
+		]
+	},
+	"continuum-languages": "Inwewin",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 inwewin|$1 inwewined}}",
+	"continuum-no-language-button-label": "Asigagindaaso inwewin",
+	"continuum-action-addsection": "Asigagindaaso dibaajimowin",
+	"continuum-action-delete": "Gaasiibii'an",
+	"continuum-action-move": "Mamaajii",
+	"continuum-action-protect": "Ganawendan",
+	"continuum-view-create": "Ozhitoon",
+	"continuum-view-edit": "Aanji'",
+	"continuum-view-history": "Gaa'-waabam",
+	"continuum-view-view": "Agindan",
+	"continuum-more-actions": "Nawaj",
+	"continuum-searchsuggest-containing": "Nandawaabam biindig mazina'igans ayaa <strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong>",
+	"continuum-toc-label": "Biindiged",
+	"continuum-toc-beginning": "Maajii",
+	"continuum-main-menu-label": "Niigaan miijim-mazina'igans",
+	"continuum-page-tools-label": "Aabajichiganed",
+	"continuum-page-tools-general-label": "Ogimaa",
+	"continuum-unpin-element-label": "gaazo"
+}

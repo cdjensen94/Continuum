@@ -1,0 +1,39 @@
+/* 🌞 Day Mode */
+.continuum-day {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* 🌚 Night Mode */
+.continuum-night {
+    --bg-color: #001F3F;
+    --text-color: #FFFFFF;
+}
+
+/* 🌤️ Light Mode (Slate, Azure, etc.) */
+.continuum-light {
+    --bg-color: #f0f4f8;  /* Soft Gray-Blue */
+    --text-color: #001F3F; /* Navy */
+    --accent-color: #7FDBFF; /* Azure */
+}
+
+/* 🌆 Medium Mode (Gray, Navy, Gold) */
+.continuum-medium {
+    --bg-color: #e0e4e8;  /* Slate */
+    --text-color: #001F3F; /* Navy */
+    --accent-color: #FFD700; /* Gold */
+}
+
+/* Apply Variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}

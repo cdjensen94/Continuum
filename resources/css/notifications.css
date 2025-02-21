@@ -1,0 +1,42 @@
+/* ===== Echo Notifications Dropdown ===== */
+.mw-echo-ui-notificationsBadgeButton {
+    background-color: var(--dark-navy);
+    color: var(--bright-orange);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mw-echo-ui-notificationsBadgeButton:hover {
+    background-color: var(--bright-orange);
+    color: var(--dark-navy);
+}
+
+/* Notification Badge */
+.mw-echo-ui-badge {
+    background-color: var(--burnt-orange);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Dropdown */
+.mw-echo-ui-dropdown {
+    background-color: var(--mid-navy);
+    border: 1px solid var(--bright-orange);
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.mw-echo-ui-dropdown a {
+    color: var(--soft-peach);
+}
+
+.mw-echo-ui-dropdown a:hover {
+    color: var(--white);
+    background-color: var(--bright-orange);
+}

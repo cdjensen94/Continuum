@@ -1,0 +1,20 @@
+/* Mobile TOC */
+#toc {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .infobox {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    #top-navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+}

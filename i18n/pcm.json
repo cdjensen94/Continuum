@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Samatics"
+		]
+	},
+	"continuum-languages": "Langwej-dem",
+	"continuum-language-button-label": "{{PLURAL:$1|$1 langwej|$1 langwej-dem}}",
+	"continuum-no-language-button-label": "Ad langwej-dem",
+	"continuum-action-addsection": "Put anoda topik",
+	"continuum-action-delete": "Komot-am",
+	"continuum-action-move": "Muv-am",
+	"continuum-action-protect": "Protet-am",
+	"continuum-view-create": "Mek-am",
+	"continuum-view-edit": "Chenj-am",
+	"continuum-view-history": "See wetin don hapun hie",
+	"continuum-view-view": "Read-am",
+	"continuum-more-actions": "Si oda tins:",
+	"continuum-searchsuggest-containing": "Find pej-dem wey get <strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong>",
+	"continuum-page-tools-label": "Tins wey you go yuz wok",
+	"continuum-page-tools-general-label": "General",
+	"continuum-unpin-element-label": "hide-am"
+}

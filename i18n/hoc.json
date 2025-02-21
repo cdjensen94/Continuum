@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Singkiring57"
+		]
+	},
+	"continuum-language-button-label": "{{PLURAL:$1|$1 𑣎𑣁𑣋𑣁𑣜|$1 𑣎𑣁𑣋𑣁𑣜 𑣌𑣉}}",
+	"continuum-action-delete": "𑢯𑣗𑣁𑣕𑣉𑣖𑣈",
+	"continuum-action-move": "𑢡𑣕𑣉𑣖𑣈",
+	"continuum-view-create": "𑢷𑣆𑣂",
+	"continuum-view-edit": "𑢩𑣚-𑣞𑣁𑣋𑣉𑣖 𑣜𑣃𑣈𑣈",
+	"continuum-view-history": "𑢾𑣂𑣔𑣈𑣞𑣁𑣆 𑣓𑣈𑣚𑣈",
+	"continuum-view-view": "𑢸𑣁𑣛𑣁𑣉𑣈",
+	"continuum-more-actions": "𑢩𑣓𑣑𑣉𑣄 𑣚𑣁𑣁𑣄",
+	"continuum-searchsuggest-containing": "<strong class=\"cdx-typeahead-search__search-footer__query\">$1</strong> 𑣖𑣈𑣓𑣁𑣄 𑣕𑣁𑣓 𑣞𑣁𑣌𑣁𑣖 𑣌𑣉 𑣓𑣈𑣚-𑣞𑣁𑣊𑣋𑣁𑣜𑣈"
+}
